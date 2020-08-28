@@ -1,0 +1,58 @@
+---
+title: "STAT5014 Homework 1"
+author: "Yixin Chen"
+date: "8/27/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\section{Problem 1}
+ **Done**
+\section{Problem 2}
+\subsection{Part A}
+Since I don't have much experience in programming, I hope I get to practice more in this course, especially with R and Rstudio. I also hope that I can implement basic statistical methods using software after learning this course. Here are some specific things that I want to learn from this course:
+\begin{itemize}
+  \item Get familiar with version control.
+  \item Get familiar with RMarkdown.
+  \item Be able to implement Monte Carlo procedure in R.
+\end{itemize}
+
+\subsection{Part B}
+Exponential Distribution:
+\begin{eqnarray}
+f(x \mid \beta)=\frac{1}{\beta} e^{-x / \beta}, \quad 0 \leq x<\infty, \quad \beta>0
+\end{eqnarray}
+Normal Distribution:
+\begin{eqnarray}
+f\left(x \mid \mu, \sigma^{2}\right)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} /\left(2 \sigma^{2}\right)}, \quad-\infty<x<\infty, \quad-\infty<\mu<\infty,\quad \sigma>0
+\end{eqnarray}
+Uniform Distribution:
+\begin{eqnarray}
+f(x \mid a, b)=\frac{1}{b-a}, \quad a \leq x \leq b
+\end{eqnarray}
+
+\section{Problem 3}
+Here are the steps that I regard as important in reproducible research:
+\begin{itemize}
+ \item[(1)] Keep track of how every result was produced.
+ \item[(2)] Note the exact names and versions of the main programs you use.
+ \item[(3)] Archive copies of your scripts from time to time.
+ \item[(4)] Archive any intermediate result files that are produced when running an analysis.
+ \item[(5)] Note the analysis steps that involve randomness.
+ \item[(6)] Store raw data behind plots.
+ \item[(7)] Submit the main data and source code as supplementary material in need of responding to any requests for further data or methodology details by peers.
+\end{itemize}
+
+\section{Problem 4}
+```{r echo=TRUE, fig.height=3.8, fig.width=8}
+library(datasets)
+plot(airquality$Wind, airquality$Temp, main = "Wind-Temp Scatter Plot", 
+     xlab = "Wind", ylab = "Temp")
+```
+
+```{r echo=TRUE, fig.height=3.8, fig.width=8}
+hist(airquality$Temp, main = "Temperature Histogram Plot", xlab = "Temperature")
+```
