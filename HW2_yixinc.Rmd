@@ -167,7 +167,5 @@ If you have difficulty with steps 1-5, git is not correctly or completely setup.
 
 ## Optional preperation for next class:  
 
-TBD
-
 
 
