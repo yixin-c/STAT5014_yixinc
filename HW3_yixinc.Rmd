@@ -1,6 +1,6 @@
 ---
 title: "Homework 3"
-subtitle: "Due September 30, 2020"
+author: "Yixin Chen"
 date: '`r Sys.Date()`'
 output: pdf_document
 ---
