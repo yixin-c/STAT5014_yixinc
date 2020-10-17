@@ -377,8 +377,11 @@ sensory$n <- as.vector(temp_n)
 
 ### Part a.
 
+In the last line of his code:
 
+`sd.boot[i]= coef(summary(lm(logapple08~logrm08, data = bootdata)))[2,2]`
 
+he wasn't supposed to use `logapple08` and `logrm08`, this two are the vectors he generated previously, not the variable name of the `bootdata`. Instead, he should use `AAPL.adjusted` and `IXIC.adjusted`.
 
 ### Part b. 
 
