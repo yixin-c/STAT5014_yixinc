@@ -97,10 +97,7 @@ plot(c(1:47),cooks.distance(fit),xlab="Observation",ylab="Cook's D",cex=0.8)
 segments(1:47,0,1:47,cooks.distance(fit))
 ```
 
-Using *base* plotting functions, create a single figure that is composed of the first two rows of plots from SAS's simple linear regression diagnostics as shown here: <https://support.sas.com/rnd/app/ODSGraphics/examples/reg.html>.  Demonstrate the plot using suitable data from problem 3.
-
 ## Problem 5
-
 
 ```{r ggplot2}
 library(ggfortify)
@@ -113,8 +110,3 @@ fit_value<-ggplot(fitvalue,aes(x=X1,y=X2))+geom_point()+xlab("Predicted Value")+
 ggarrange(plots[[1]], fit_stures, plots[[5]], plots[[2]], fit_value, plots[[4]],nrow = 2,ncol = 3)
 ```
 
-## Problem 6
-
-Finish this homework by pushing your changes to your repo.
-
-**Only submit the .Rmd and .pdf solution files.  Names should be formatted HW5_lastname_firstname.Rmd and HW5_lastname_firstname.pdf**
